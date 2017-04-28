@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mrquang.bt2.activity.MainActivity"
+    android:weightSum="10">
+
+
+    <android.support.v7.widget.LinearLayoutCompat
+    android:layout_width="0dp"
+        android:layout_weight="4"
+    android:layout_height="match_parent">
+        <fragment
+        android:id="@+id/frgMenu"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp"
+        android:name="com.example.mrquang.bt2.fragment.MenuFragmentOfMainActyFragment"
+        tools:layout="@layout/fragment_menu" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:background="#e2ffef"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="6">
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="com.example.mrquang.bt2.fragment.DetailFragment"
+            tools:layout="@layout/fragment_detail"
+            android:id="@+id/frgDetailFragmnt" />
+    </android.support.v7.widget.LinearLayoutCompat>
+    
+</android.support.v7.widget.LinearLayoutCompat>
